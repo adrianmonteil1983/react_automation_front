@@ -1,14 +1,11 @@
 import React,{useEffect, useState} from 'react';
-import {weather_key} from '../../keys';
-import {location_key} from '../../keys';
+import {weather_key, location_key} from '../../keys';
 import './WeatherGrid.css';
 
 
 const WeatherGrid = () => {
-   		
-   		const[meteo, setMeteo] = useState()
-
-
+   	const[meteo, setMeteo] = useState()
+  
   useEffect(() => {
 		(async() =>{
 			const getDataLocation = await fetch(`https://geo.ipify.org/api/v1?apiKey=${location_key}`);
@@ -22,14 +19,14 @@ const WeatherGrid = () => {
 	},[])
 	
 	return(
-			meteo
-			? <div id='meteoContainer'>
-				<p id='city' className='infos'>{meteo.data[0].city_name}</p>
-				<p id='temp' className='infos'>{`${meteo.data[0].temp} F`}</p>
-				<p id='description' className='infos'>{`${meteo.data[0].weather.description}`}</p>
-				<img id='icon'alt="weather" src={`https://www.weatherbit.io/static/img/icons/${meteo.data[0].weather.icon}.png`}/>
-			</div>
-			: <div><h1>Loading</h1></div>      
+    meteo
+    ? <div id='meteoContainer'>
+      <p id='city' className='infos'>{meteo.data[0].city_name}</p>
+      <p id='temp' className='infos'>{`${meteo.data[0].temp} F`}</p>
+      <p id='description' className='infos'>{`${meteo.data[0].weather.description}`}</p>
+      <img id='icon'alt="weather" src={`https://www.weatherbit.io/static/img/icons/${meteo.data[0].weather.icon}.png`}/>
+    </div>
+    : <div><h1>Loading</h1></div>      
 	)			
 } 
 

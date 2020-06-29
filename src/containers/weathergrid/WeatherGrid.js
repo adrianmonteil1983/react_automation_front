@@ -20,8 +20,7 @@ const WeatherGrid = () => {
 			setMeteo(dataWeather);
 		})()
 	},[])
-	//location key:   at_2rQy1wopghDWuAFPgWAosngQ9depZ&ipAddress=
-	//weather key:    fe24a9094d5f45c8a8a6c47ba9e1afff&units=I
+	
 	return(
 			meteo
 			? <div id='meteoContainer'>

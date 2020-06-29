@@ -5,7 +5,7 @@ import Reader from '../../components/reader/Reader';
 import Footer from '../../components/footer/Footer';
 import { useDispatch, useSelector } from 'react-redux';
 import { connectMQTT } from '../../action/actions';
-import { camera_ip} from'../../keys';
+import { camera_ip } from'../../keys';
 //import Thermostat from '../../components/thermostat/Thermostat';
 
 import './LightGrid.css';

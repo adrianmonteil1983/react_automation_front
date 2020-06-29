@@ -1,0 +1,29 @@
+#outside{
+    height: 200px;
+    width: 200px;
+    display: grid;
+    background-color: white;
+    border-radius: 50%;
+    place-self: center; 
+}   
+#middle{
+    height: 180px;
+    width: 180px;
+    display: grid;
+    background-color: black;
+    border-radius: 50%;
+    place-self: center;  
+}
+#inside{
+    height: 130px;
+    width: 130px;
+    display: grid;
+    background-color: blue;
+    border-radius: 50%;  
+    place-self: center; 
+}
+#inside h1{
+    place-self: center;
+    padding: 0;
+    color:  white;
+}

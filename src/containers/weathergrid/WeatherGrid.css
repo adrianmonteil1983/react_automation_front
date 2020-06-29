@@ -1,0 +1,32 @@
+#meteoContainer{
+	height: 87%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	border-radius: 15px;
+	background-color:#302f2f;	
+}
+#city{
+	font-size: 5vw;
+}
+#temp{
+	font-size: 10vw;
+}
+#description{
+	font-size: 4vw;
+}
+#icon{ 
+	width: 15vw;
+	height: 15vw;
+	grid-column: 2 / 2;
+	place-self: center;
+}
+.infos{
+	font-family: 'Patchy Robots Regular';
+	justify-self: center;
+	align-self: center;
+	margin: 0px;
+	color: #23A8F2;
+	box-shadow: rgb(22, 23, 24);
+}

@@ -1,0 +1,47 @@
+button{
+  place-self: center;
+  height: 10vmin;
+  width: 15vmin;
+  border-radius: 15px;
+  outline: none;
+  color: white;
+  font-size: 100%;
+  font-weight: bold;
+  box-shadow:10px 10px 30px black;
+  border-color: white;
+  background-color: #23A8F2;
+  cursor: pointer;
+}
+button .off{
+  grid-area: 2 / 1;
+}
+#lightGrid{
+  margin: 0;
+  padding: 0;
+  height: 87%;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 38% 38% 19.5%;
+  column-gap: 1%;
+  row-gap: 4%;
+}
+#bottom{
+  grid-column: 1 / span 2;
+  grid-row: 3 / 4;
+}
+.area{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  border: 1px solid  #333333;
+  border-radius: 15px;
+  background-color:  #302f2f;
+}
+.camera{
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: span 2;
+}
+.onHover{
+  background-color: #333333;  
+}

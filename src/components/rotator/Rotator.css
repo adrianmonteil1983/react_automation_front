@@ -1,0 +1,22 @@
+
+.rotator{
+	height: 100px;
+	width: 100px;
+	background-color: grey;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px 5px grey;
+}
+
+.insideRotator{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #2f3136;
+	margin: 75px 20px 0px;
+}
+
+
+
+

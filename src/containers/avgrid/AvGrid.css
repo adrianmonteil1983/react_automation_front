@@ -1,0 +1,65 @@
+#AvGrid{
+	margin: 0;
+    padding: 0;
+    height: 87%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+	grid-template-rows: 38% 38% 19.5%;
+    column-gap: 1%;
+    row-gap: 4%;
+}
+.areaAV{
+    border: 1px solid#333333;
+    border-radius: 15px;
+    background-color:#302f2f;
+}
+/**************************************** NUMERIC PAD *********************************************/
+#numericpad{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2px;
+	grid-row-gap: 2px;
+}
+.key{
+	place-self: center;
+	height: 10vmin;
+	width: 15vmin;
+	transition: all .1s ease-in-out;
+	border: 1px solid rgb(156, 153, 153);
+	border-radius: 15px;
+	box-shadow:10px 10px 30px black;
+}
+.key:hover{
+	cursor: pointer;
+}
+.key:active{
+ 	transform: scale(0.9);
+}
+
+/********************************************* SOURCES *****************************************/
+#source{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.keysource{
+	align-self: center;
+}
+
+/********************************************* AUDIO ******************************************/
+.audio{
+	grid-area: audio;
+	display: inline-grid;
+}
+
+/********************************************* DISPLAY ****************************************/
+.display{
+	grid-area: display;
+	display: inline-grid;
+}
+
+/******************************************** BOTTOM *****************************************/
+#bottom{
+    grid-column: 1 / span 2;
+}

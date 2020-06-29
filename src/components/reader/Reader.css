@@ -1,0 +1,5 @@
+.image{
+	place-self: center;
+	grid-column: 2 / 2;
+	grid-row: 1 / span 2;
+}

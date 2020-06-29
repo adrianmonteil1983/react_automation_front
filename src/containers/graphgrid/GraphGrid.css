@@ -1,0 +1,6 @@
+#chart{
+    height: 87%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90%;
+}

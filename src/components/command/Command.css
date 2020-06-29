@@ -1,0 +1,22 @@
+.keyCommand{
+  place-self: center;
+  display: grid;
+  place-items: center;
+  height: 10vmin;
+  width: 15vmin;
+  border-radius: 15px;
+  color: white;
+  font-size: 100%;
+  font-weight: bold;
+  box-shadow:10px 10px 30px black;
+  border-left: white 2px solid;
+  border-top: white 2px solid;
+  border-right: grey 2px solid;
+  border-bottom: grey 2px solid;
+  background-color: #23A8F2;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+.keyCommand:active{
+  transform: scale(0.9);
+}

@@ -1,0 +1,14 @@
+#title{
+    height: 10%;
+}
+#title h1{
+    font-size: 3vmin;
+    font-family: 'Patchy Robots Regular';
+    color: #23A8F2;
+    margin-top: 0px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    padding: 15px 0px 1px 15px;
+    text-align: start;
+}
+  

@@ -7,7 +7,7 @@ const connectionPort = () => {
 
 export const connectMQTT = () => async (dispatch) => {
   dispatch({type: 'PENDING'});
-  const client = await MQTT.connect(`wss://test.mosquitto.org:${connectionPort()}`)
+  const client = await MQTT.connect(`wss://test.mosquitto.org:8081`)
   client.on('connect', () => {
     console.log('mqtt connected',client);
     client.subscribe(['reactAutomation', 'reactAutomation/retrive','reactAutomation/memory'])

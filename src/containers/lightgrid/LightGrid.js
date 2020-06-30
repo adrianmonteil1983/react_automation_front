@@ -11,7 +11,6 @@ import { camera_ip } from'../../keys';
 import './LightGrid.css';
 
 const LightGrid = () => {
-  console.log(camera_ip);
   const dispatch = useDispatch();
   const mqttClient = useSelector((state) => state.mqttConnection.mqttClient);
   let interval = null;

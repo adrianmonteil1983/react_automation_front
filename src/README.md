@@ -10,7 +10,7 @@ dashboard and components for smart home and smart buildings.
 * Here a little architecture explanation:
 
 
-*  (hosted on netlify)             (mosquitto.com)            (local network)
+*     hosted on netlify             mosquitto.com                  local network
 *                      ---------------- MQTT ------------>            ---- SOCKET---->arduino
 *          REACT                                                 NODE       
 *                      <--------------- MQTT -------------            --MONGO-CLIENT---->docker(mongoDB)

@@ -8,9 +8,9 @@ dashboard and components for smart home and smart buildings.
 * Here a little architecture explanation:
 
 
-*         (hosted on netlify)         (mosquitto.com)       (local network)
+*         (hosted on netlify)         (mosquitto.com)            (local network)
 *                         ---------------- MQTT ------------>         ---- SOCKET---->arduino
-* FRONT END:         REACT                                      NODE        
+*               REACT                                           NODE       
 *                         <--------------- MQTT -------------         --MONGO-CLIENT---->docker(mongoDB)
 
-* [Backend](https://github.com/adrianmonteil1983/react_automation_back) 
+* [Link to the backend repository](https://github.com/adrianmonteil1983/react_automation_back) 

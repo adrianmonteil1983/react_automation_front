@@ -44,8 +44,9 @@ const LightGrid = () => {
 						</div>
 						
             <div className='camera'>
-              <iframe src={`${camera_ip}`} width='100%' height="100%" title="camera">
-              </iframe>
+              {/*<iframe src={`${camera_ip}`} width='100%' height="100%" title="camera">
+                  </iframe>*/}
+              <p>for security  reason the cctv stream is available only in Local Area Network</p>
 						</div>
             <div className='area'>
               <Command address={6} value={1} name={'on'}/>

@@ -1,8 +1,8 @@
-iframe{
-  background-image: url('../../icons/cctv.jpg');
+/*iframe{
+  /*background-image: url('../../icons/cctv.jpg');
   background-size: cover ;
   background-repeat: no-repeat;
-}
+}*/
 button{
   place-self: center;
   height: 10vmin;
